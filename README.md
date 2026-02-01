@@ -9,7 +9,7 @@ Je suis étudiante en troisième année d'économie et gestion à l'IAE de Nante
 
 ---
 
-## Mes projets
+## Mes projets :
 
 ### [Impact du logement parental sur la réussite scolaire](./Impact-Logement-Etudiant)
 *Projet universitaire - IAE Nantes*
