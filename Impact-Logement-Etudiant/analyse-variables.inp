@@ -1,0 +1,32 @@
+# Methode statistique
+
+#------------------------------------------------------------------------------------------
+
+# Analyse statistique préliminaire
+# Cette commande permet d'avoir des informations sur la moyenne, la médiane, le minimum et le maximum des variables.
+
+summary
+
+#------------------------------------------------------------------------------------------
+
+# Test de corrélation
+#Ici, j'ai effectué plusieurs test de corrélation entre des variables différentes.
+
+corr 11 24
+corr 24 28
+corr 24 17
+corr 24 20
+
+#------------------------------------------------------------------------------------------
+
+# Régression linéaire multiple (MCO)
+# le modèle MCO nous fournit une estimation quantitative de l’effet de vivre chez ses parents.
+
+# 1er modèle MCO comprenant uniquement la variable principale “vivre chez ses parents”, afin d’obtenir une estimation de son effet sur la moyenne scolaire.
+
+ols 24 0 11
+
+# 2nd modèle en intégrant l’ensemble des variables de contrôle afin d’isoler l’effet propre du fait de vivre chez ses parents.
+
+ols 24 0 11 12 13 14 15 16 17 18 19 20 21 22 23 25 26 27 28 29 30 31 32
+

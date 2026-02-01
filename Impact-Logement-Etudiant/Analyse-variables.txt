@@ -1,0 +1,180 @@
+gretl version 2023b
+Session courante: 2026-02-01 19:31
+
+# Methode statistique
+#------------------------------------------------------------------------------------------
+# Analyse statistique préliminaire
+# Cette commande permet d'avoir des informations sur la moyenne, la médiane, le minimum et le maximum des variables.
+? summary
+Suppression de parents: séries alphanumérique
+Suppression de revenu: séries alphanumérique
+Suppression de composition_foyer: séries alphanumérique
+Suppression de type_de_logement: séries alphanumérique
+Suppression de derniere_moyenne: séries alphanumérique
+Suppression de temps_etude: séries alphanumérique
+Suppression de trajet: séries alphanumérique
+Suppression de genre: séries alphanumérique
+Suppression de niveau_etude: séries alphanumérique
+
+                          Moyenne        Médiane        Minimum        Maximum
+qualite_de_l_env~          3,6777         4,0000         1,0000         5,0000
+parents_R                 0,38843        0,00000        0,00000         1,0000
+revenu_R                   561,86         450,00         150,00         1250,0
+foyers_R                   2,6864         2,5000        0,00000         5,5000
+T0                        0,11570        0,00000        0,00000         1,0000
+T1                       0,099174        0,00000        0,00000         1,0000
+T1bis                    0,049587        0,00000        0,00000         1,0000
+Studio                    0,14050        0,00000        0,00000         1,0000
+T2                        0,14050        0,00000        0,00000         1,0000
+T3                       0,074380        0,00000        0,00000         1,0000
+T4                        0,17355        0,00000        0,00000         1,0000
+T5                        0,11570        0,00000        0,00000         1,0000
+T6plus                   0,074380        0,00000        0,00000         1,0000
+Autres                   0,016529        0,00000        0,00000         1,0000
+resultat_scolaire          12,851         13,000         9,0000         17,000
+temps_etude_R              2,8471         2,5000         1,5000         11,500
+qualite_environn~          3,6777         4,0000         1,0000         5,0000
+trajet_R                   35,785         30,000         10,000         150,00
+niveau_etude_R             3,1983         3,0000         1,0000         5,0000
+genre_R                 0,0082645        0,00000        0,00000         1,0000
+femmes                    0,55372         1,0000        0,00000         1,0000
+hommes                    0,43802        0,00000        0,00000         1,0000
+autres                  0,0082645        0,00000        0,00000         1,0000
+
+                         Ec. type           C.V.      Asymétrie   Ex. kurtosis
+qualite_de_l_env~         0,93287        0,25366       -0,37077       -0,42340
+parents_R                 0,48942         1,2600        0,45782        -1,7904
+revenu_R                   367,52        0,65411        0,62927       -0,61033
+foyers_R                   1,5727        0,58543        0,21429        -1,1935
+T0                        0,32120         2,7761         2,4029         3,7737
+T1                        0,30014         3,0264         2,6821         5,1934
+T1bis                     0,21799         4,3962         4,1496         15,219
+Studio                    0,34895         2,4837         2,0691         2,2811
+T2                        0,34895         2,4837         2,0691         2,2811
+T3                        0,26348         3,5423         3,2442         8,5248
+T4                        0,38030         2,1913         1,7239        0,97190
+T5                        0,32120         2,7761         2,4029         3,7737
+T6plus                    0,26348         3,5423         3,2442         8,5248
+Autres                    0,12803         7,7457         7,5840         55,517
+resultat_scolaire          1,9350        0,15057        0,37064       -0,68702
+temps_etude_R              1,5095        0,53018         2,6087         9,4948
+qualite_environn~         0,93287        0,25366       -0,37077       -0,42340
+trajet_R                   26,638        0,74439         1,4781         2,2666
+niveau_etude_R            0,98843        0,30904        0,42714       -0,61410
+genre_R                  0,090909         11,000         10,863         116,01
+femmes                    0,49917        0,90149       -0,21613        -1,9533
+hommes                    0,49821         1,1374        0,24986        -1,9376
+autres                   0,090909         11,000         10,863         116,01
+
+                            PC 5%         PC 95%             IQ     Obs. manq.
+qualite_de_l_env~          2,0000         5,0000         1,0000              0
+parents_R                 0,00000         1,0000         1,0000              0
+revenu_R                   150,00         1250,0         600,00              3
+foyers_R                  0,50000         5,5000         3,0000              3
+T0                        0,00000         1,0000        0,00000              0
+T1                        0,00000         1,0000        0,00000              0
+T1bis                     0,00000        0,90000        0,00000              0
+Studio                    0,00000         1,0000        0,00000              0
+T2                        0,00000         1,0000        0,00000              0
+T3                        0,00000         1,0000        0,00000              0
+T4                        0,00000         1,0000        0,00000              0
+T5                        0,00000         1,0000        0,00000              0
+T6plus                    0,00000         1,0000        0,00000              0
+Autres                    0,00000        0,00000        0,00000              0
+resultat_scolaire          11,000         17,000         4,0000              0
+temps_etude_R              1,5000         4,5000        0,00000              0
+qualite_environn~          2,0000         5,0000         1,0000              0
+trajet_R                   10,000         90,000         40,000              0
+niveau_etude_R             2,0000         5,0000         1,5000              0
+genre_R                   0,00000        0,00000        0,00000              0
+femmes                    0,00000         1,0000         1,0000              0
+hommes                    0,00000         1,0000         1,0000              0
+autres                    0,00000        0,00000        0,00000              0
+
+#------------------------------------------------------------------------------------------
+# Test de corrélation
+#Ici, j'ai effectué plusieurs test de corrélation entre des variables différentes.
+? corr 11 24
+
+corr(parents_R, resultat_scolaire) = -0,04406930
+Sous l'hypothèse nulle d'absence de corrélation :
+ t(119) = -0,481207, avec une p. critique bilatérale 0,6313
+
+? corr 24 28
+
+corr(resultat_scolaire, niveau_etude_R) = 0,32925665
+Sous l'hypothèse nulle d'absence de corrélation :
+ t(119) = 3,80387, avec une p. critique bilatérale 0,0002
+
+? corr 24 17
+
+corr(resultat_scolaire, Studio) = -0,06752198
+Sous l'hypothèse nulle d'absence de corrélation :
+ t(119) = -0,738263, avec une p. critique bilatérale 0,4618
+
+? corr 24 20
+
+corr(resultat_scolaire, T4) = 0,03537614
+Sous l'hypothèse nulle d'absence de corrélation :
+ t(119) = 0,38615, avec une p. critique bilatérale 0,7001
+
+#------------------------------------------------------------------------------------------
+# Régression linéaire multiple (MCO)
+# le modèle MCO nous fournit une estimation quantitative de l’effet de vivre chez ses parents.
+# 1er modèle MCO comprenant uniquement la variable principale “vivre chez ses parents”, afin d’obtenir une estimation de son effet sur la moyenne scolaire.
+? ols 24 0 11
+
+Modèle 1: MCO, utilisant les observations 1-121
+Variable dépendante: resultat_scolaire
+
+              coefficient   éc. type   t de Student   p. critique
+  ---------------------------------------------------------------
+  const        12,9189      0,225667     57,25         1,87e-088  ***
+  parents_R    −0,174238    0,362086     −0,4812       0,6313    
+
+Moyenne var. dép.     12,85124   Éc. type var. dép.    1,935033
+Somme carrés résidus  448,4497   Éc. type régression   1,941259
+R2                    0,001942   R2 ajusté            -0,006445
+F(1, 119)             0,231560   P. critique (F)       0,631253
+Log de vraisemblance −250,9469   Critère d'Akaike      505,8938
+Critère de Schwarz    511,4854   Hannan-Quinn          508,1648
+
+# 2nd modèle en intégrant l’ensemble des variables de contrôle afin d’isoler l’effet propre du fait de vivre chez ses parents.
+? ols 24 0 11 12 13 14 15 16 17 18 19 20 21 22 23 25 26 27 28 29 30 31 32
+
+Modèle 2: MCO, utilisant les observations 1-121 (n = 115)
+Suppression d’observations manquantes ou incomplètes: 6
+Variable dépendante: resultat_scolaire
+Omis pour cause de multicollnéarité parfaite : Autres hommes autres
+
+                      coefficient    éc. type    t de Student  p. critique
+  ------------------------------------------------------------------------
+  const                8,21833      2,12019         3,876        0,0002    ***
+  parents_R            0,175071     0,740139        0,2365       0,8135   
+  revenu_R             1,42925e-05  0,000590155     0,02422      0,9807   
+  foyers_R             0,0875984    0,120144        0,7291       0,4677   
+  T0                   1,64481      1,57217         1,046        0,2981   
+  T1                   1,76425      1,57001         1,124        0,2639   
+  T1bis                1,92823      1,59846         1,206        0,2307   
+  Studio               1,36726      1,58335         0,8635       0,3900   
+  T2                   1,89554      1,52287         1,245        0,2163   
+  T3                   0,986962     1,57385         0,6271       0,5321   
+  T4                   1,84708      1,53754         1,201        0,2326   
+  T5                   1,19176      1,53387         0,7770       0,4391   
+  T6plus               1,37099      1,64957         0,8311       0,4080   
+  temps_etude_R       −0,0940646    0,123038       −0,7645       0,4464   
+  qualite_environn~    0,322682     0,215134        1,500        0,1369   
+  trajet_R            −0,00470568   0,00833970     −0,5643       0,5739   
+  niveau_etude_R       0,577989     0,191934        3,011        0,0033    ***
+  genre_R             −1,12993      2,01009        −0,5621       0,5753   
+  femmes               0,215468     0,368580        0,5846       0,5602   
+
+Moyenne var. dép.     12,79130   Éc. type var. dép.    1,898733
+Somme carrés résidus  324,2083   Éc. type régression   1,837708
+R2                    0,211155   R2 ajusté             0,063247
+F(18, 96)             1,427609   P. critique (F)       0,136355
+Log de vraisemblance −222,7740   Critère d'Akaike      483,5481
+Critère de Schwarz    535,7018   Hannan-Quinn          504,7170
+
+Constante mise à part, la probabilité critique est la plus élevée pour la variable 12 (revenu_R)
+
