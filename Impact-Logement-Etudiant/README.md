@@ -36,26 +36,26 @@ Les données ont été transformées pour être exploitables :
   Script : [Preparation_transformation_données.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/Preparation_transformations_donn%C3%A9es.inp)
 
   
-- **Méthodes statistiques :**
+**Méthodes statistiques :**
   
   Script : [analyse-variables.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/analyse-variables.inp)
   
   - **Analyse descriptives**
   Pour cela, on utilise la commande "summary".
-Sortie de code : [Analyse-variables.txt](./Analyse-variables.txt)
-Graphique de la variable "parents" : [diagramme_parents](./Diagramme_parents.png)
-Graphique de la variable "résultat scolaire" : [Diagramme_résulats_scolaire](./Diagramme_résultats_scolaire.png)
+    - Sortie de code : [Analyse-variables.txt](./Analyse-variables.txt)
+    - Graphique de la variable "parents" : [diagramme_parents](./Diagramme_parents.png)
+    - Graphique de la variable "résultat scolaire" : [Diagramme_résulats_scolaire](./Diagramme_résultats_scolaire.png)
 
 
-    - Analyse de corrélation
-Tests de corrélation entre les résultats scolaires et :
+**Analyse de corrélation**
+- Tests de corrélation entre les résultats scolaires et :
 le fait de vivre chez ses parents
 le niveau d’étude
 le type de logement
 Résultat : pas de corrélation significative entre vivre chez ses parents et la moyenne.
 
    
-    - Régression linéaire multiple (MCO)
+**Régression linéaire multiple (MCO)**
 Le premier modèle MCO contient uniquement la variable principale “vivre chez ses parents”, afin d’obtenir une estimation de son effet sur la moyenne scolaire.
 Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
 
