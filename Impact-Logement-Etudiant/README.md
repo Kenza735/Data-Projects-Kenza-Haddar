@@ -16,13 +16,13 @@ Ce dépôt contient les ressources suivantes :
 - **Méthodes statistiques :**
   Script : [analyse-variables.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/analyse-variables.inp)
     - Statistiques descriptives
-      Sortie de code : [Analyse-variables.txt](./Analyse-variables.txt)
-      Graphique de la variable "parents" : [diagramme_parents](./Diagramme_parents.png)
-      Graphique de la variable "résultat scolaire" : [Diagramme_résulats_scolaire](./Diagramme_résultats_scolaire.png)
+Sortie de code : [Analyse-variables.txt](./Analyse-variables.txt)
+Graphique de la variable "parents" : [diagramme_parents](./Diagramme_parents.png)
+Graphique de la variable "résultat scolaire" : [Diagramme_résulats_scolaire](./Diagramme_résultats_scolaire.png)
     - Analyse de corrélation
     - Régression linéaire multiple (MCO)
-      Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
-      Graphique du second modèle MCO : [2nd MCO](./Graph_2nd_MCO.png)
+Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
+Graphique du second modèle MCO : [2nd MCO](./Graph_2nd_MCO.png)
       
 ---
 *Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion](https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link)*
