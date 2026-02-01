@@ -11,9 +11,10 @@ Grâce à ce questionnaire, ce projet s'appuie sur un échantillon de 121 étudi
 
 ## Ce que j'ai fait avec Gretl :
 Ce dépôt contient les ressources suivantes :
-- **Scripts d'analyse :** Codes sources au format **.inp** pour le logiciel **Gretl**.
 - **Nettoyage et préparation des données**
+      - Scrpipt : ./analyse-variables
 - **Méthodes statistiques :**
+          - Script : ./analyse-variables
     - Statistiques descriptives
     - Analyse de corrélation
     - Régression linéaire multiple (MCO)
