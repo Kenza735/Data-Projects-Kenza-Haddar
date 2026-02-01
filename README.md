@@ -1,4 +1,4 @@
-# Portfolio de Projets d'analyse de données - Kenza Haddar
+# Portfolio de projets d'analyse de données - Kenza Haddar
 
 Bienvenue ! Ce dépôt regroupe la partie technique de mon parcours. 
 J'utilise cet espace pour démontrer ma capacité à manipuler des bases de données, construire des modèles statistiques et extraire des conclusions.
@@ -15,7 +15,7 @@ Je suis étudiante en troisième année d'économie et gestion à l'IAE de Nante
 *Projet universitaire - IAE Nantes*
 - **Objectif :** Analyser si le fait de vivre chez ses parents influence la moyenne scolaire via un modèle de régression linéaire (MCO).
 - **Outils :** Gretl (économétrie), Google Forms (collecte de données).
-- **Résultat clé :** Le niveau d'étude est le principal déterminant de la réussite ; le logement parental n'est pas significatif sur cet échantillon.
+- **Résultat obtenu :** Le niveau d'étude est le principal déterminant de la réussite ; le logement parental n'est pas significatif sur cet échantillon.
 
 ### [Analyse des cambriolages en France (2016-2024)](./Analyse-Cambriolages)
 *Projet personnel*
