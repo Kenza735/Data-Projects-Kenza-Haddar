@@ -1,21 +1,22 @@
-# 🎓 Impact du logement parental sur la réussite scolaire
+# Est ce que vivre chez ses parents a un impact sur les résultats scolaires ?
 
-## Présentation du projet
+## En quoi consiste ce projet ?
 Ce projet universitaire d'analyse de données explore les déterminants de la performance académique. 
-La problématique centrale est de déterminer si le fait de vivre au domicile parental constitue un avantage ou un frein pour les résultats scolaires des étudiants.
-Le projet couvre l'intégralité de la chaîne de traitement de la donnée : de la conception de l'enquête quantitative à la modélisation économétrique.
+La problématique centrale est de déterminer si le fait de vivre chez parental constitue un avantage ou un frein pour les résultats scolaires des étudiants.
 
-## Contenu technique
+## D'où viennent les données ?
+Une enquête quantitative à été réalisée à l'aide d'un questionnaire en ligne (Google Forms).
+Grâce à ce questionnaire, ce projet s'appuie sur un échantillon de 121 étudiants de l'IAE de Nantes qui ont été interrogés entre novembre 2025 et décembre 2025.
+
+## Ce que j'ai fait avec Gretl :
 Ce dépôt contient les ressources suivantes :
-- **Scripts d'analyse :** Codes sources au format `.inp` pour le logiciel **Gretl**.
-- **Traitement statistique :** Nettoyage des données brutes, statistiques descriptives et matrices de corrélation.
-- **Modélisation :** Régression linéaire multiple (MCO) pour tester la significativité des variables de contrôle (temps de trajet, niveau d'étude, etc.).
+- **Scripts d'analyse :** Codes sources au format **.imp** pour le logiciel **Gretl**.
+- **Nettoyage et préparation des données**
+- **Méthodes statistiques :**
+    - Statistiques descriptives
+    - Analyse de corrélation
+    - Régression linéaire multiple (MCO)
 - **Visualisation :** Graphiques et outputs de résultats issus des estimations.
 
----
-👉 *Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion]([TON_LIEN_VERS_LA_PAGE_DU_PROJET](https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link)).*
-
-
-Contient :
-- Codes Gretl
-- Résultats des codes / graphiques
+---------------------------------------------------------------------------------------------------
+*Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion]([https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link])*
