@@ -1,0 +1,96 @@
+# PREPARATION ET TRANSFORMATIONS DES DONNEES
+
+#------------------------------------------------------------------------------------------
+
+#Les variables qualitatives ordinales ont été transformées en variables numériques à l'aide de valeurs représentatives (approximations par milieux de classes).
+#Les variables nominales ont été transformées en variables indicatrices.
+
+#------------------------------------------------------------------------------------------
+
+# Variable 1 : Le fait de vivre chez ses parents.
+# Note : Création de variables binaires
+rename 1 parents
+
+genr parents_R = (parents=="oui")?1 :0
+
+
+# Variable 2 : Le Revenu mensuel.
+# Note : Transformation des variables ordinales en variables numériques par approximation des milieux de classe.
+
+rename 2 revenu
+
+genr revenu_R = (revenu=="Moins de 300 euros")*150+(revenu=="Entre 301 et 600 euros")*450+(revenu=="Entre 601 et 900 euros")*750+(revenu=="Plus de 901 euros")*1050
+
+
+#Variable 3 : La omposition du foyer.
+# Note : Les valeurs sont décalées de 0.5 pour représenter le milieu et pour transformer la composition du foyer en variable continue.
+
+rename 3 composition_foyer
+
+genr composition_foyer_R=(composition_foyer=="1")*0.5+(composition_foyer=="2")*1.5+(composition_foyer=="3")*2.5+(composition_foyer=="4")*3.5+(composition_foyer=="5")*4.5+(composition_foyer=="6")*5.5+(composition_foyer=="7 ou plus")*6.5
+
+
+# Variable 4 : Type de logement.
+# Note : Création de variables binaire pour traiter les catégories nominales de manière isolée.
+
+rename 4 type_de_logement
+
+
+genr T0 = (type_de_logement=="Un T0 (Une seule petite pièce, sans vraie cuisine. Type studette)")?1:0
+genr T1 = (type_de_logement=="Un T1 (Une pièce principale + cuisine séparée + salle de bain)")?1:0
+genr T1bis = (type_de_logement=="Un T1 Bis (Comme un T1 mais avec un petit espace en plus (coin nuit/alcôve))")?1:0
+genr studio = (type_de_logement=="Un Studio (Une pièce principale avec kitchenette (pas une cuisine séparée))")?1:0
+genr T2 = (type_de_logement=="Un T2 (Séjour + 1 chambre séparée)")?1:0
+genr T3 = (type_de_logement=="Un T3 (Séjour + 2 chambres.)")?1:0
+genr T4 = (type_de_logement=="Un T4 (Séjour + 3 chambres)")?1:0
+genr T5 = (type_de_logement=="Un T5 (Séjour + 4 chambres)")?1:0
+genr T6_plus = (type_de_logement=="Un T6 ou plus (Séjour + 5 chambres et plus)")?1:0
+genr Autres_type = (type_de_logement=="Autres")?1:0
+
+
+#Variable 5 : moyenne scolaire
+
+rename 5 moyenne_scolaire
+
+genr resultat_scolaire=(moyenne_scolaire=="Moins de 10/20")*9+(moyenne_scolaire=="Entre 10.01/20 et 12/20")*11+(moyenne_scolaire=="Entre 12.01/20 et 14/20")*13+(moyenne_scolaire=="Entre 14.01/20 et 16/20")*15+(moyenne_scolaire=="Plus de 16.01/20")*17
+
+
+# Variable 6 : Temps d'étude.
+# Note : Transformation des variables ordinales en variables numériques par approximation des milieux de classe.
+
+rename 6 temps_etude
+
+genr temps_etude_R = (temps_etude == "Moins de 1h")*1.5+ (temps_etude == "Entre 1h et 3h")*2.5 + (temps_etude == "Entre 3h et 6h")*4.5+(temps_etude=="Entre 6h et 9h")*7.5+(temps_etude=="Plus de 9h")*9.5
+
+
+#Variable 7 : La qualité de l'environnement.
+# Note : Transoformation en une échelle ordinale numérique pour capter l'effet de la progression dans la qualité de l'environnement.
+
+rename 7 environnement
+
+genr environnement_R=(environnement =="1")*1+(environnement=="2")*2+(environnement =="3")*3+(environnement =="4")*4+(environnement =="5")*5
+
+
+# Variable 8 : La durée du trajet.
+# Note : Transformation d’une variable qualitative ordinale en variable quantitative à l’aide de valeurs représentatives des classes.
+rename 8 trajet
+
+genr trajet_R=(trajet=="Moins de 20 mins")*10+(trajet=="Entre 20 min et 40 min")*30+(trajet=="Entre 40 min et 1h")*50+(trajet=="Entre 1h et 2h")*70+(trajet=="Plus de 2h")*90
+
+
+# Variable 9 : Le genre.
+# Note : Création de variables binaire pour traiter les catégories nominales de manière isolée.
+
+rename 9 genre
+
+genr autres=(genre=="Non binaire")?1:0
+genr femme=(genre=="Une femme")?1:0
+genr homme=(genre=="Un homme")?1:0
+
+
+# Variable 10 : Le niveau d'étude.
+# Note : Transoformation en une échelle ordinale numérique pour capter l'effet de la progression dans le supérieur.
+
+rename 10 niveau_etude
+
+genr niveau_etude_R=(niveau_etude=="L1")*1+(niveau_etude=="L2")*2+(niveau_etude=="L3")*3+(niveau_etude=="M1")*4+(niveau_etude=="M2")*5+(niveau_etude=="Doctorant")*6+(niveau_etude=="Autres")*7
