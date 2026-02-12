@@ -3,7 +3,7 @@
 Ce dépôt regroupe la partie technique de mon parcours. 
 J'utilise cet espace pour démontrer ma capacité à manipuler des bases de données, construire des modèles statistiques et extraire des conclusions.
 
-Je suis étudiante en troisième année d'économie et gestion à l'IAE de Nantes. Je réalise des projets d'analyse de données avec l'objectif d'évoluer vers la Data Science.
+Je suis étudiante en troisième année d'économie et gestion avec le parcours analyse économique. Je réalise des projets d'analyse de données avec l'objectif d'évoluer vers la Data Science.
 
 👉 **[Consulter mon portfolio complet sur Notion](https://oil-license-98c.notion.site/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?pvs=143)**
 
