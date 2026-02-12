@@ -5,6 +5,10 @@
 Ce projet universitaire d'analyse de données explore les déterminants de la performance académique. 
 La problématique centrale est de déterminer si le fait de vivre chez parental constitue un avantage ou un frein pour les résultats scolaires des étudiants.
 
+## Les hypothèses : 
+- H0 : vivre chez ses parents n’as aucun effet significatif sur les résultats scolaires
+- H1 : vivre chez ses parents à un effet significatif sur les résultats scolaires
+
 ## D'où viennent les données ?
 
 Les données proviennent d’une enquête quantitative réalisée via Google Forms auprès d’étudiants de l’IAE de Nantes.
@@ -23,6 +27,9 @@ Variables utilisées :
     - Qualité de l’environnement de travail
     - Taille du foyer
     - Genre
+  - Modèle : Y = β0 + β1 parents + β2 ⋅niveau d’étude + β3⋅temps de travail + β4⋅type de logement + β5⋅revenu personnel  + β6⋅temps de trajet +β7⋅qualité de l’environnement  +               β8⋅nombre de personne dans le foyers +ϵ
+
+
 
 ## Analyse des variables avec Gretl :
 
